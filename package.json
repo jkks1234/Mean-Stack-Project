@@ -1,0 +1,40 @@
+{
+  "name": "article",
+  "version": "1.0.0",
+  "main": "app.js",
+  "dependencies": {
+    "angular": "^1.6.4",
+    "angular-route": "^1.6.4",
+    "bcrypt-nodejs": "^0.0.3",
+    "body-parser": "^1.17.2",
+    "ejs": "^2.5.6",
+    "express": "^4.15.3",
+    "fs": "0.0.1-security",
+    "image-to-data-uri": "^1.1.0",
+    "mongod": "^2.0.0",
+    "mongodb": "^2.2.30",
+    "mongoose": "^4.11.5",
+    "mongoose-double": "0.0.1",
+    "morgan": "^1.8.2",
+    "multer": "^1.3.0",
+    "mysql": "^2.13.0",
+    "nodemon": "^1.11.0"
+  },
+  "devDependencies": {
+    "connect-modrewrite": "^0.10.1"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jkks1234/Reach.git"
+  },
+  "bugs": {
+    "url": "https://github.com/jkks1234/Reach/issues"
+  },
+  "homepage": "https://github.com/jkks1234/Reach#readme",
+  "description": ""
+}
