@@ -1,0 +1,27 @@
+<h1 align="center">Add Article</h1>
+<form class="form-horizontal" (submit)="onSubmit()">
+  <fieldset>
+    <legend></legend>
+  	
+    <div class="form-group">
+      <label for="title" class="col-lg-2 control-label">Title</label>
+      <div class="col-lg-10">
+        <input class="form-control" id="Title" [(ngModel)] = "title" [ngModelOptions]="{standalone: true}" placeholder="title" type="text">
+      </div>
+    </div>
+    <div class="form-group">
+      <label for="textArea" class="col-lg-2 control-label">Body</label>
+      <div class="col-lg-10">
+        <textarea class="form-control" rows="14" id="textArea" 
+        [(ngModel)] = "body" [ngModelOptions]="{standalone: true}" placeholder="body ......"></textarea>
+        
+      </div>
+    </div>
+    <div class="form-group">
+      <div class="col-lg-10 col-lg-offset-2">
+       	<button type="reset" class="btn btn-default">Cancel</button>
+        <button type="submit" class="btn btn-primary">Submit</button>
+      </div>
+    </div>
+  </fieldset>
+</form>

@@ -1,0 +1,21 @@
+<table class="table table-striped table-hover ">
+  <thead>
+    <tr>
+      <th>#</th>
+      <th>Title</th>
+      <th>Author</th>
+      <th>Date</th>
+      <th>View</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let articles of article; let i = index" [attr.data-index]="i">
+      <td>{{i+1}}</td>
+      <td>{{articles.title}}</td>
+      <td>{{articles.name}}</td>
+      <td>{{articles.createdon}}</td>
+      <td><a [routerLink]="['/listone',articles._id]">View</a></td>
+    </tr>
+    
+  </tbody>
+</table> 

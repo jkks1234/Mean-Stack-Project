@@ -1,7 +1,7 @@
 var mongoose = require('mongoose');
 require('mongoose-double')(mongoose);
 var SchemaTypes = mongoose.Schema.Types;
-var reach_regis = new mongoose.Schema(
+var User = new mongoose.Schema(
 {
 	name:
 	{
@@ -14,12 +14,7 @@ var reach_regis = new mongoose.Schema(
 		require :true
 	},
 
-    address : {
-    	type:String,
-    	require : true
-    
-  	},
-  	city:
+  	password:
   	{
   		type : String,
   		require :true
@@ -29,10 +24,14 @@ var reach_regis = new mongoose.Schema(
   		type : String,
   		require :true
   	},
-  	verified: 
-  	{
-      type: Boolean,
-      default: false
-    }
 });
-mongoose.model('reach_regis',reach_regis,'Reach_regis');
+const user = module.exports = mongoose.model('reach_regis',User,'user');
+
+module.exports.getUserById = function(id,callback){
+	user.findById(id,callback);
+}
+module.exports.getUserByUsername = function(username,callback){
+	const query={username:username};
+
+	user.findOne(query,callback);
+}
