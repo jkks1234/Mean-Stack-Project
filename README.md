@@ -2,7 +2,7 @@
 A Mean App where user can add desired article.User can also edit and delete their articles .User can also view articles of other users and also search articles based on their interest.
 
 ## Key Features
-View articles,Delete articles,Search items,My Articles,Authentication using Passport-jwt,Mongodb Storage
+View articles,Delete articles,Search articles,My Articles,Authentication using Passport-jwt,Mongodb Storage
 
 ## Start Nodejs Server
 -npm install 
