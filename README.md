@@ -1,4 +1,4 @@
-# ARTICLE_FACTORY
+# ARTICLE-FACTORY
 A Mean App where user can add desired article.User can also edit and delete their articles .User can also view articles of other user and also search articles based on their interest.
 
 ## Key Features
