@@ -17,3 +17,6 @@ View articles,Delete articles,Search articles,My Articles,Authentication using P
 <br>
 <img src="https://user-images.githubusercontent.com/27223544/34773804-fae26f82-f632-11e7-98bf-377ae2b92edf.png" width=400><img src="https://user-images.githubusercontent.com/27223544/34773767-df3e1286-f632-11e7-9a0b-55bc1a2e4555.png" width =400>
 <br>
+
+## TODO
+Add a .gitignore file
