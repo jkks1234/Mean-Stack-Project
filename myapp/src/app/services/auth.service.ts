@@ -72,8 +72,6 @@ export class AuthService {
     let headers = new Headers(); 
     this.loadToken();
     const modToken = this.authToken;
-    console.log('token=');
-    console.log(modToken);
     headers.append('Authorization',modToken);
     headers.append('Content-Type','application/json');
     return this.http.post('http://localhost:2217/api/addarticle',article , {headers: headers}).map(res => res.json());
@@ -87,7 +85,6 @@ export class AuthService {
   
   loadToken(){
     const token = localStorage.getItem('id_token');
-    console.log(token);
     this.authToken = token;
   }
 
